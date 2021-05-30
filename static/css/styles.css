@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+}
+.blog-container{
+    margin:20px 50px;
+    padding:20px 10px;
+    box-shadow: 3px 3px 6px grey;
+}
+
+.button{
+    padding:8px 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.edit{
+    background-color: rgb(22, 224, 113);
+    color:white;
+    border:none;
+}
+.delete{
+    background-color: red;
+    color:white;
+    border:none;
+}
+
+.no-post{
+    text-align: center;
+}
+.form-container{
+    width:40%;
+    height:450px;
+    background-color: rgb(173, 157, 187,0.3);
+    padding-top: 20px;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+.form-container h1{
+    color:blueviolet;
+    letter-spacing: 1px;
+}
+.input-field{
+    width: 80%;
+    margin:20px 20px;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    border-bottom: 3px solid blueviolet;
+    padding-left: 10px;
+    font-size: large;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.input-text-area{
+    width: 80%;
+    margin:20px 20px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    border-bottom: 3px solid blueviolet;
+    padding-left: 10px;
+    font-size: large;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-top:10px;
+}
+#submit{
+    width: 80%;
+    padding:20px  50px;
+    background-color: blueviolet;
+    color:white;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+}

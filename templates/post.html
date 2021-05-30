@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>posts</title>
+    
+{% endblock %}
+
+{% block body %}
+    
+    {% if len!= 0 %}
+            {% for post in posts %}
+                <div class="blog-container">
+                    <h1>{{ post.id }}. {{ post.title }}</h1>
+                    <p>{{ post.content }}</p>
+                    <a href="posts/edit/{{post.id}}"><button class="button edit"><i class="fa fa-edit"></i></button></a>
+                    <a href="posts/delete/{{post.id}}"><button class = "button delete"><i class="fa fa-trash"></i></button></a>
+                </div>
+            {% endfor %}
+    {% else %}
+        <div class="no-post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQc8odhMTP7bNGEGX4tiBh8NXaDu6CcycWlg&usqp=CAU" alt="No post">
+            <h2>You don't have any post</h2>
+        </div>
+    {% endif %}
+    
+{% endblock %}
